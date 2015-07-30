@@ -1,0 +1,8 @@
+<form method="post" action="/sign/in/todo">
+	<table  width="350" bgcolor="#ccffcc" style="border-color" border="1">
+		<tr align=center><td>用户名</td><td><input type="text" name="username"  id="username" value="{{.Username}}"></td></tr>
+		<tr align=center><td>密 码</td><td><input type="password" name="password" id="password"value="{{.Password}}"></td></tr>
+		<tr align=center><td colspan="2"><input type="submit" value="登 录"/>&nbsp;<a href="/sign/up">注册</a></td></tr>    
+		<tr align=center><td colspan="2"><input id="remember" name="remember" type="checkbox">记住我</td></tr>                
+	</table>
+</form>

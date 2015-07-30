@@ -1,0 +1,23 @@
+<table>
+
+	<thead>
+		<tr>
+			<th>序号</th>
+			<th>用户</th>
+			<th>密码</th>
+			<th>注册时间</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		{{range $k,$v := .Users}}
+		<td>{{$v.Id}}</td>
+		<td>{{$v.Username}}</td>
+		<td>{{$v.Passwrod}}</td>
+		<td>{{$v.Created.Format "2006-01-02 15:04:05"}}</td>
+		<td><a href="/user/upd/{{$v.Id}}">修改</a>&nbsp;<a href="/user/del/{{$v.Id}}">删除</a></td>
+		{{end}}
+	</tbody>
+
+</table>

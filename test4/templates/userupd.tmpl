@@ -1,0 +1,8 @@
+<form method="post" action="/user/upd/todo">
+	<input id="id" type="hidden" name="id" value="{{.User.Id}}">
+	<table  width="350" bgcolor="#ccffcc" style="border-color" border="1">
+		<tr align=center><td>用户名</td><td><input type="text" name="username"  id="username" value="{{.User.Username}}"></td></tr>
+		<tr align=center><td>密 码</td><td><input type="password" name="password" id="password" value="{{.User.Password}}"></td></tr>
+		<tr align=center><td colspan="2"><input type="submit" value="提 交"/></td></tr>                    
+	</table>
+</form>
